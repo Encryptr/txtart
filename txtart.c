@@ -1,3 +1,5 @@
+// (C) 2020 jacekms
+// This code is licensed under Apache 2.0 license (see LICENSE for details)
 
 #include <stdio.h>
 #include <stdlib.h>

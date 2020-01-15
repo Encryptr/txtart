@@ -16,12 +16,12 @@ typedef struct
 Mark marks[256];
 
 //=============================================================================
-int txtart_load_font()
+int txtart_load_font(const char* file_dir)
 {
   char sline[255];
   int h = 5;
 
-  FILE *f = fopen("font.txt", "rt");
+  FILE *f = fopen(file_dir, "rt");
   if (!f) {printf("ERROR open font.txt\n"); return 1;}
 
   static const int first_char = '!';

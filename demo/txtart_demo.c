@@ -1,12 +1,13 @@
+// (C) 2020 jacekms
+// This code is licensed under Apache 2.0 license (see LICENSE for details)
 
-#include "txtart.c"
-
+#include "../src/txtart.c"
 
 //=============================================================================
 int main (int argc, char** argv)
 {
 
-  if (txtart_load_font()) return 1;
+  if (txtart_load_font("./src/font.txt")) return 1;
   if (argc == 1)
   {
     printf("use: %s \"text to display\" [compression] [\"separator\"]\n\n", argv[0]);
